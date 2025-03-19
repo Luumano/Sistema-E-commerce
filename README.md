@@ -2,19 +2,21 @@
 
 ## Propósito do Projeto
 Este projeto tem como objetivo demonstrar a implementação da pirâmide de testes em um sistema de gestão de pedidos, utilizando .NET (C#). Ele inclui testes unitários, de integração, de sistema e de aceitação, garantindo qualidade e confiabilidade no software.
-## Entidades e Funcionalidades
-### 1 Cliente
-* ID do Cliente
-* Nome
-* E-mail
-* Lista de Pedidos associados
-### 2 Pedido
-* ID do Pedido
-* Cliente Associado
-* Data do Pedido
-* Lista de Itens
-* Status do Pedido
-* Cálculo do Valor Total do Pedido
+## 🏷️ Entidades e Funcionalidades
+
+### 1️⃣ Cliente  
+- **ID do Cliente**  
+- **Nome**  
+- **E-mail**  
+- **Lista de Pedidos associados**  
+
+### 2️⃣ Pedido  
+- **ID do Pedido**  
+- **Cliente Associado**  
+- **Data do Pedido**  
+- **Lista de Itens**  
+- **Status do Pedido**  
+- **Cálculo do Valor Total do Pedido**  
 ## Funcionalidades
 * Cadastro e consulta de clientes
 * Cálculo automático do valor total do pedido
@@ -26,16 +28,14 @@ O relatório de cobertura pode ser acessado [aqui](coverage/index.html).
 ### 📌 Pré-requisitos  
 - .NET 6+ instalado  
 - Git instalado
-### 🔧 Clonar o Repositório 
-* git clone https://github.com/Luumano/Sistema-E-commerce.git
-### Navegue até a pasta do projeto:
-* cd Sistema-E-commerce-main
-### Restaure as dependências
-* dotnet restore
-### Compile o projeto
-* dotnet build
-### Execute a aplicação
-* dotnet run
+## 🔧 Clonar o Repositório  
+git clone https://github.com/Luumano/Sistema-E-commerce.git  
+cd Sistema-Ecommerce-main  
+## 🔨 Restaurar Dependências e Compilar  
+dotnet restore  
+dotnet build
+## ▶️ Executar a Aplicação  
+dotnet run  
 
 ## Como Rodar os Testes Automatizados
 ### Testes Unitários e de Integração
@@ -46,12 +46,15 @@ Execute os testes unitários e de integração com o seguinte comando:
 Para rodar os testes de aceitação utilizando SpecFlow, execute:
 * dotnet test --filter Category=AcceptanceTests
 
-## Cobertura de Código
-O projeto utiliza Coverlet para medir a cobertura de código. Para gerar o relatório de cobertura, execute:
-* dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
+## 📊 Cobertura de Código  
+O projeto utiliza **Coverlet** para medir a cobertura de código. Para gerar o relatório de cobertura, execute:  
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
 
 ### O relatório será gerado na pasta coverage/.
-
+Para visualizar, utilize um visualizador de cobertura como o ReportGenerator:
+dotnet tool install --global dotnet-reportgenerator-globaltool  
+reportgenerator -reports:coverage/*.xml -targetdir:coverageReport 
+Agora, abra coverageReport/index.html no navegador para ver os detalhes da cobertura! 📈
 ## 🛠️ Tecnologias Utilizadas  
 - .NET 7+  
 - xUnit para testes unitários  

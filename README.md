@@ -29,7 +29,7 @@ O relatório de cobertura pode ser acessado [aqui](coverage/index.html).
 ### 🔧 Clonar o Repositório 
 * git clone https://github.com/Luumano/Sistema-E-commerce.git
 ### Navegue até a pasta do projeto:
-* cd SistemaGestaoPedidos
+* cd Sistema-E-commerce-main
 ### Restaure as dependências
 * dotnet restore
 ### Compile o projeto
@@ -50,7 +50,7 @@ Para rodar os testes de aceitação utilizando SpecFlow, execute:
 O projeto utiliza Coverlet para medir a cobertura de código. Para gerar o relatório de cobertura, execute:
 * dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
 
-## O relatório será gerado na pasta coverage/.
+### O relatório será gerado na pasta coverage/.
 
 ## 🛠️ Tecnologias Utilizadas  
 - .NET 7+  

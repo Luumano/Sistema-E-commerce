@@ -21,3 +21,41 @@ Este projeto tem como objetivo demonstrar a implementação da pirâmide de test
 * Controle de status do pedido
 ## 📊 Cobertura de Código
 O relatório de cobertura pode ser acessado [aqui](coverage/index.html).
+
+# 🚀 Como Executar o Projeto Localmente
+### 📌 Pré-requisitos  
+- .NET 6+ instalado  
+- Git instalado
+### 🔧 Clonar o Repositório 
+* git clone https://github.com/seu-usuario/nome-do-repositorio.git
+### Navegue até a pasta do projeto:
+* cd SistemaGestaoPedidos
+### Restaure as dependências
+* dotnet restore
+### Compile o projeto
+* dotnet build
+### Execute a aplicação
+* dotnet run
+
+## Como Rodar os Testes Automatizados
+### Testes Unitários e de Integração
+Execute os testes unitários e de integração com o seguinte comando:
+* dotnet test
+
+### Testes de Aceitação (SpecFlow)
+Para rodar os testes de aceitação utilizando SpecFlow, execute:
+* dotnet test --filter Category=AcceptanceTests
+
+## Cobertura de Código
+O projeto utiliza Coverlet para medir a cobertura de código. Para gerar o relatório de cobertura, execute:
+* dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
+
+## O relatório será gerado na pasta coverage/.
+
+## 🛠️ Tecnologias Utilizadas  
+- .NET 7+  
+- xUnit para testes unitários  
+- SpecFlow para testes de aceitação  
+- Coverlet para análise de cobertura de código  
+- FluentAssertions para validação de testes  
+- Moq para mocks em testes de integração  

@@ -48,12 +48,12 @@ Para rodar os testes de aceitação utilizando SpecFlow, execute:
 
 ## 📊 Cobertura de Código  
 O projeto utiliza **Coverlet** para medir a cobertura de código. Para gerar o relatório de cobertura, execute:  
-dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
+* dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
 
 ### O relatório será gerado na pasta coverage/.
 Para visualizar, utilize um visualizador de cobertura como o ReportGenerator:
-dotnet tool install --global dotnet-reportgenerator-globaltool  
-reportgenerator -reports:coverage/*.xml -targetdir:coverageReport 
+* dotnet tool install --global dotnet-reportgenerator-globaltool  
+* reportgenerator -reports:coverage/*.xml -targetdir:coverageReport 
 Agora, abra coverageReport/index.html no navegador para ver os detalhes da cobertura! 📈
 ## 🛠️ Tecnologias Utilizadas  
 - .NET 7+  

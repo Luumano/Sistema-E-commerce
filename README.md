@@ -20,4 +20,4 @@ Este projeto tem como objetivo demonstrar a implementação da pirâmide de test
 * Cálculo automático do valor total do pedido
 * Controle de status do pedido
 ## 📊 Cobertura de Código
-O relatório de cobertura pode ser acessado [aqui](coverage/index.html).
+O relatório de cobertura pode ser acessado [aqui](SistemaGestaoPedidos/coverage_report/index.html).

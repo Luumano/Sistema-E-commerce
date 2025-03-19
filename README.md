@@ -1,4 +1,4 @@
-# Sistema-de-Gest-o-de-Pedidos---E-commerce-Simples
+# Sistema-de-Gestão-de-Pedidos-E-commerce-Simples
 
 ## Propósito do Projeto
 Este projeto tem como objetivo demonstrar a implementação da pirâmide de testes em um sistema de gestão de pedidos, utilizando .NET (C#). Ele inclui testes unitários, de integração, de sistema e de aceitação, garantindo qualidade e confiabilidade no software.
